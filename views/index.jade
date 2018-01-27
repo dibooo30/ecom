@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  .cardes
+   .row
+    - each item in data
+      .col-md-6.col-lg-4
+        .card
+          img.card-img-top(src='#{item.imgPath}', alt='aswan')
+          .card-body
+            h5.card-title #{item.title}
+            p.card-text #{item.des}
+            a.btn.btn-primary(href='#') see more
+            i.btn.btn-dark(class="float-right") #{item.price} $
+           

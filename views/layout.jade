@@ -1,0 +1,62 @@
+doctype html
+html(lang='en')
+  head 
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title= title
+    link(rel="stylesheet", href="/css/fontawesome-all.min.css")
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href='#') shoping
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/') cart shop
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='#') User Mangment
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                if !user
+                  a.dropdown-item(href='/users/signup') sign up
+                  a.dropdown-item(href='/users/signin') sign in
+                if user
+                  a.dropdown-item(href='/profile/logout') log out
+    .container
+      div.login-done.alert.alert-denger #{message}
+      
+      block content
+
+
+          
+      
+    
+    footer
+        .container
+          .row
+            .col-md-6 Copy Right &copy; 2018  
+              span.ahmed with 
+                i.fa.fa-heart 
+                |  by Ahmed Diab
+              
+            .col-md-6
+              a.face(href='#')
+                i.fab.fa-facebook.fa-2x
+              a.googel-plus(href='#')
+                i.fab.fa-google-plus.fa-2x
+              a.twet(href='#')
+                i.fab.fa-twitter.fa-2x
+              a.linked(href='#')
+                i.fab.fa-linkedin.fa-2x
+              a.you(href='#')
+                i.fab.fa-youtube.fa-2x
+    script(src='/js/jquery-3.2.1.min.js')
+    script(src='/js/popper.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/js.js')

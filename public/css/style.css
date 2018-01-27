@@ -1,0 +1,158 @@
+
+/*end navbar*/
+nav .navbar-nav .dropdown-menu{
+  left: -150px;;
+}
+@media(max-width:768px){
+  nav .navbar-nav .dropdown-menu{
+    left: 0px;;
+  }
+}
+/*start slider*/
+
+form{
+  margin-top: 25px;
+  padding:25px;
+}
+form label{
+  color: #fff;
+}
+/*start navbar media*/
+
+@media (min-width: 769px) {
+  .nv .act {
+      color: #8e8686 !important;
+  }
+}
+
+/*end navbar */
+/* satart shop cardes */
+.cardes{
+  padding: 50px 0;
+}
+.cardes .col-md-6{
+  padding: 10px 10px 10px 0;
+}
+.cardes .card-body{
+  background-color: #424444;
+  color: #fff;
+}
+.cardes .card{
+  width: 100% !important;
+}
+
+.messages, .login-done{
+  padding: 0px;
+  margin-top: 20px;
+}
+.login-done li{
+  background-color: rgba(11, 240, 11, 0.411);
+  font-size: 20px;
+  color: #666;
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+}
+
+.error li{
+  background-color: rgba(255, 0, 0, 0.404);
+  font-size: 20px;
+  color: #666;
+  list-style-type: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+/* end shop cardes */
+/* start global */
+.googel-plus{
+  color:#fff; 
+}
+.twet{
+  color:#fff; 
+}
+.linked{
+  color:#fff; 
+}
+.you{
+  color:#fff; 
+}
+.face{
+  color:#fff; 
+}
+
+.googel-plus:hover{
+  color:#db4437; 
+}
+.twet:hover{
+  color: #1da1f2;
+}
+.linked:hover{
+  color: #007fa5;
+}
+.you:hover{
+  color: #f00;
+}
+.face:hover{
+  color:#4267b2;
+}
+/* end global */
+
+/* start footer*/
+
+footer {
+padding: 30px 0;
+background-color: #313234;
+color: #fff;
+margin-top: 50px;
+}
+
+footer .ahmed{
+  font-size: 8px;
+  font-weight: normal;
+}
+footer .ahmed i{
+  font-size: 10px;
+  color: #f00;
+  margin-right: 0px;
+}
+footer .fa {
+margin-right: 10px;
+font-size: 25px;
+font-weight: bold;
+cursor: pointer;
+transition: all .5s ease-in-out;
+}
+footer .col-md-6:last-of-type i{
+  float: right;
+  margin:0 5px;
+  transition: all ease-in-out .5s;
+}
+footer .font-weight-bold {
+padding-top: 3px
+}
+
+/*start footer media*/
+
+@media (max-width: 760px) {
+  footer {
+  text-align: center;
+  position: relative;
+  height: 160px;
+  }
+  
+  footer .col-md-6 {
+  margin-bottom: 10px;
+  text-align: center !important;
+  }
+  footer .col-md-6:first-of-type{
+      position: absolute;
+      bottom: 10px;
+  }
+  footer .col-md-6:last-of-type i{
+      float: inherit
+  }
+  }
+  
